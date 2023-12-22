@@ -7,53 +7,58 @@
 }
 
 body {
-    font-size: 15px;
     font-family: 'Outfit', sans-serif;
 }
 
+/* style for the background */
 .container {
     max-width: 1440px;
-    height: 100svh;
+    height: 100vh;
+    margin: 0 auto;
     background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* style for the card */
 .container .card {
-    width: 300px;
-    height: 450px;
+    width: 80%;
+    max-width: 350px;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
+    border-radius: 0.9375em;
+    padding: 1.25em;
 }
 
+/* style for the qr code div and image */
 .container .card .qr-code {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: auto;
-    margin: 15px 0 25px;
+    max-width: 100%;
+    margin-bottom: 1.5em;
 }
 
 .container .card .qr-code img {
-    max-width: 270px;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px;
+    max-width: 100%;
+    border-radius: 0.625em;
 }
 
+/* style for the texts */
 .container .texts {
+    max-width: 100%;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 1.5625rem;
+    font-size: 0.9375rem;
+    margin-bottom: 1.875rem;
 }
 
 .texts .leadText {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     color: hsl(218, 44%, 22%);
+    line-height: 1.2;
     font-weight: 700;
 }
 
 .texts .lightText {
     color: hsl(220, 15%, 55%);
+    line-height: 1.2;
     font-weight: 400;
 }
